@@ -1,0 +1,81 @@
+From dizone at gmail.com  Fri Aug 17 11:49:20 2007
+From: dizone at gmail.com (Dizzy)
+Date: Fri, 17 Aug 2007 12:49:20 +0300
+Subject: [Pvpgn-pkg] PvPGN 1.8.1 Released!
+Message-ID: <cc416a620708170249hd49c113m9025ef8f15e24c68@mail.gmail.com>
+
+Hello.
+
+We are happy to release the next version of our stable branch, pvpgn
+1.8.1. This is another huge bug fixing release including fixes for
+some very nasty bugs (easily reproduced bugs that can crash pvpgn).
+All users of previous versions should update.
+
+
+Downloads as usual from http://pvpgn.berlios.de/index.php?page=files
+
+ ChangeLog for 1.8.1 (since 1.8.0)
+=========================================
+
+[WOL]
+  -- fixed bug trying to join unexistent games
+  -- fixed bug overflowing the max players game limit
+  -- fixed bug of not showing Yuri's revenge channels
+  -- added address translation support to servserv sent addresses
+  -- added support for usage of /commands
+
+[WAR3]
+  -- fixed possible server crash on ill-formated clan invitation reply packet
+  -- properly display tourney wins/losses in account profile
+
+[MISC]
+  -- fixed d2dbs accepting d2gs connections from any ip
+  -- fixed IRC /notice disc bug
+  -- fixed warning and reactivated reconnecting when using mysql>=5.0.13
+  -- fixed SC:BW string representation from "StarCraft: Broodwars"
+  to "StarCraft: Brood War" (to better match battle.net behaviour)
+  -- fixed possible server crash caused by /ipban command
+  -- enforce (stricter) limit for maximum channel name length
+  -- fixed problems caused by login via uid
+  -- added new "account_force_username" option to bnetd.conf
+  -- fixed malformed tracker packets on 64bit machines
+
+[VCHECK]
+  -- added WAR3/W3XP IX86 1.21 vcheck entries
+  -- added sc/bw IX86 and XMAC 1.15 version check entries
+
+-- 
+Dizzy
+
+
+From dizone at gmail.com  Fri Aug 17 16:36:03 2007
+From: dizone at gmail.com (Dizzy)
+Date: Fri, 17 Aug 2007 17:36:03 +0300
+Subject: [Pvpgn-pkg] PvPGN 1.99.r324 Released!
+Message-ID: <cc416a620708170736j5144eb14jbf9153261470dfcf@mail.gmail.com>
+
+Hi
+
+PvPGN development progress has been slow as of late but in the long
+time since we started the 1.99.x development branch many things
+changed some of which being very nice (such as optimizations for very
+big servers). Most of our focus on 1.99.x is to convert the code base
+to a proper C++ version, then modularize to better support new
+protocols and of course add new gaming protocols. For the curious
+types that are too lazy to fetch the code from the SVN repository we
+offer this snapshot. It should mostly work but it may also break as
+it's a development snapshot. Report bugs on the bug tracker as usual.
+Do not expect win32 binary packages too soon tho. And if you find the
+version strange, it's just the SVN repository number at the moment of
+release, it helps us developers when tracking buggy code changes.
+
+As for a changelog, we don't have one complete right now so I can't
+provide one. Assume that everything has changed between 1.8.x and
+1.99.x (although most has not heh).
+
+Downloads as usual on http://pvpgn.berlios.de
+
+-- 
+Dizzy
+
+
